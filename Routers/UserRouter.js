@@ -11,7 +11,7 @@ router.post("/register-user", registerUser);
 router.post("/login-user", loginUser);
 router.get("/get-user", authMiddleware, getuser);
 router.post("/forgot-password", forgotPassword);
-router.post("/reset-password/:id/:token", resetPassword);
+router.put("/reset-password/:id/:token", resetPassword);
 
 // Exporting the router instance
 export default router;
